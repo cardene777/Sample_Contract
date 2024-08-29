@@ -3,7 +3,7 @@ pragma solidity 0.8.25;
 
 import { IERC6551Registry } from "../interfaces/IERC6551Registry.sol";
 
-abstract contract ERC6551RegistryBase is IERC6551Registry {
+contract ERC6551RegistryBase is IERC6551Registry {
     function createAccount(
         address implementation,
         bytes32 salt,

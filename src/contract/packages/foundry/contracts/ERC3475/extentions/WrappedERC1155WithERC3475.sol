@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: CC0-1.0
+// ERC1155の各tokenIdをERC3475として管理
 
 pragma solidity ^0.8.0;
 

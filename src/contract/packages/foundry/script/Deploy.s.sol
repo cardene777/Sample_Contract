@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.25;
 
-import "../contracts/ERC3475/extentions/WrappedEERC3475ToERC1155.sol";
+import "../contracts/ERC3475/extentions/ERC3475Compatible.sol";
 import "./DeployHelpers.s.sol";
 
 contract DeployScript is ScaffoldETHDeploy {
@@ -18,10 +18,10 @@ contract DeployScript is ScaffoldETHDeploy {
 
     string memory uri = "https://example.com";
 
-    WrappedEERC3475ToERC1155 wrappedEERC3475ToERC1155 = new WrappedEERC3475ToERC1155(uri);
+    ERC3475Compatible erc3475Compatible = new ERC3475Compatible(uri);
     console.logString(
       string.concat(
-        "WrappedEERC3475ToERC1155 deployed at: ", vm.toString(address(wrappedEERC3475ToERC1155))
+        "ERC3475Compatible deployed at: ", vm.toString(address(erc3475Compatible))
       )
     );
 
