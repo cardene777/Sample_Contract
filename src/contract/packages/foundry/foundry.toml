@@ -41,4 +41,11 @@ quote_style = "double"
 bracket_spacing = true
 int_types = "long"
 
+[profile.default.model_checker]
+engine = "chc"
+targets = ["asset", "overflow", "underflow"]
+solvers = ["z3"]
+timeout = 20000
+show_proved_safe = true
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
